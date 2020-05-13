@@ -146,3 +146,9 @@ const Person = ({ personId }) => {
 ### 其他 hook
 
 详情请看官网示例 [Hook API 索引](https://zh-hans.reactjs.org/docs/hooks-reference.html)
+
+### 参考链接
+
+[React Hooks 入门教程](https://www.ruanyifeng.com/blog/2019/09/react-hooks.html)
+
+[Why React Hooks](https://juejin.im/post/5c6971f96fb9a049fb443459)
