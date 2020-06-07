@@ -16,3 +16,21 @@ function compose(...funcs) {
   return funcs.reduce((a, b) => (...args) => b(a(...args)));
 }
 ```
+
+另外一种写法
+
+```javascript
+function compose(...funcs) {
+  if (funcs.length === 0) {
+    return arg => arg;
+  }
+
+  if (funcs.length === 1) {
+    return funcs[0];
+  }
+
+  return (...args) => funcs.reduce((acc, cur) => cur(acc), ...args);
+}
+```
+
+两种写法结果都是相同的
